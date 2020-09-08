@@ -6,44 +6,58 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <title>Bob Ross Appreciation</title>
 </head>
 
 <body>
-    <div class="contact-page" id="contact">
+    <main>
+        <div class="contact-page" id="contact">
+            <h1>To Contact Bob Ross Inc. :</h1>
 
-        <h2>To contact Bob Ross Inc., please fill out and submit the form below.</h2>
-
-        <form action="action_page.php" method="POST">
-        <label for="fn">First Name</label>
-        <input type="text" class="f-name" id="fn" name="firstname" placeholder="First Name">
-                            
-        <label for="ln">Last Name</label>
-        <input type="text" class="l-name" id="ln" name="lastname" placeholder="Last Name">
+            <h2>Please fill out and submit the form below.</h2>
     
-        <label for="ea">Email Address</label>
-        <input type="email" name="email" class="e-input" id="ea" id="EmailAddress" placeholder="Email Address">
-
-        <label for="sb">Subject</label>
-        <input type="text" class="s-input" id="sb" name="subject" placeholder="Subject">
+            <form action="action_page.php" method="POST">
+            <label for="fn">First Name</label>
+            <input type="text" class="f-name" id="fn" name="firstname" placeholder="First Name">
+                                
+            <label for="ln">Last Name</label>
+            <input type="text" class="l-name" id="ln" name="lastname" placeholder="Last Name">
+        
+            <label for="ea">Email Address</label>
+            <input type="email" name="email" class="e-input" id="ea" id="EmailAddress" placeholder="Email Address">
     
-        <label for="mb">Message</label>
-        <textarea class="m-input" id="mb" name="message" placeholder="Write your message here..."></textarea>
-        </form>
+            <label for="sb">Subject</label>
+            <input type="text" class="s-input" id="sb" name="subject" placeholder="Subject">
+        
+            <label for="mb">Message</label>
+            <textarea class="m-input" id="mb" name="message" placeholder="Write your message here..."></textarea>
+            </form>
+    
+            <button class="button button-submit" id="buttonThankYou">Submit</button>
+        </div>
+    
+        <div class="thank-you" id="thankYou">
+            <img src="../assets/bob_ty.jpg" alt="Bob Ross painting of maointains and a quote.">
+    
+            <h1>Thank You!</h1>
+    
+            <div class="flex-button">
+                <a href="../index.html"> <button class="button">Go Back to Homepage</button> </a>
+    
+                <button class="button" id="buttonGoBackContact">Go Back to Contact Page</button>
+            </div>
+        </div>    
+    </main>
+    
+    <script>
+        var ContactBox = document.getElementById("contact");
+        var ThankYouBox = document.getElementById("thankYou");
 
-        <button class="button">Click here to Contact Bob Ross Inc.</button>
-    </div>
-
-    <div class="thank-you">
-        <img src="../assets/bob_ty.jpg" alt="Bob Ross painting of maointains and a quote.">
-
-        <h1>Thank You!</h1>
-
-        <a href="../index.html"> <button class="button">Go Back to Homepage</button> </a>
-        <button class="button">Go Back to Contact Page</button>
-    </div>
-
-    <script></script>
+        galContainer1.style.display = "none";
+        galContainer2.style.display = "none";
+    </script>
 </body>
 
 </html>
