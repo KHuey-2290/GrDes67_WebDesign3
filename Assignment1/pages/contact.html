@@ -55,8 +55,20 @@
         var ContactBox = document.getElementById("contact");
         var ThankYouBox = document.getElementById("thankYou");
 
-        galContainer1.style.display = "none";
-        galContainer2.style.display = "none";
+        ThankYouBox.style.display = "none";
+
+        $(document).ready(function () {
+            $("#buttonThankYou").click(function() {
+                $("#contact").hide();
+                $("#thankYou").show();
+
+            });
+
+            $("#buttonGoBackContact").click(function() {
+                $("#contact").show();
+                $("#thankYou").hide();
+            });
+})
     </script>
 </body>
 

@@ -100,10 +100,6 @@ button:hover {
     background-color: lavender;
     color: rgb(13, 13, 13);
 }
-
-.button-home {
-    margin: 50px;
-}
 /* End of Homepage */
 
 
@@ -159,6 +155,7 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .flex-button button {
@@ -220,6 +217,12 @@ label {
     .flex-button {
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    /* Contact Page */
+    .contact-page, .thank-you {
+        max-width: 650px;
+        margin: auto;
     }
 }
 
