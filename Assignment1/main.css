@@ -108,9 +108,10 @@ p {
 }
 
 button {
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
     background-color: rgb(60, 49, 136);
+    font-size: 18px;
     color: seashell;
 }
 
@@ -125,7 +126,7 @@ button:hover {
 .contact-page {
     border: solid 1px rgb(13, 13, 13);
     border-radius: 15px;
-    background-color: rgb(247, 210, 117);
+    background-color: palegreen;
     padding: 20px;
 }
 form {
