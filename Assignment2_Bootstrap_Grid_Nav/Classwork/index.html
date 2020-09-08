@@ -11,9 +11,47 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+
+    <style>
+        body {
+            padding-top: 100px;
+        }
+        nav .navbar-brand img {
+            max-width: 45px;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+            <a class="navbar-brand" href="#"><img src="assets/mushroom_logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 bg-primary">
@@ -32,7 +70,7 @@
                 <p>Row 1, Col 1</p>
             </div>
 
-            <div class="col-12 col-md-4 col-lg-12 bg-designer">
+            <div class="col-12 col-md-4 col-lg-12 bg-danger">
                 <p>Row 1, Col 1</p>
             </div>
         </div>
