@@ -1,11 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url("pages/contact.css");
+
 /* font-family: 'Roboto', sans-serif;
  */
 
 body {
     margin: 0px;
 };
+
+.text-flex h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Contact Page */
+form {
+    margin-top: 25px;
+}
+
+label {
+    padding-left: 60px;
+    text-align: left;
+}
+
+.f-name,.l-name,.e-input,.s-input,.m-input {
+    display: block;
+    width: 75%;
+    height: 30px;
+    margin: 0px auto 15px;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+    font-family: 'oxygen';
+}
+
+.m-input {
+    height: 250px;
+    padding: 10px;
+}
+
+.button>form>input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: 'oxygen';
+    background-color: midnightblue;
+    color: paleturquoise;
+}
 
 @media(min-width: 500px) {
 
