@@ -12,12 +12,21 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 
-    <title>Bootstrap Forms</title>
+    <title>UI Elements & FontAWESOME</title>
 
 </head>
 
 <body class="">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        A simple danger alert—check it out!
+
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
     <header>
+        <!-- Placeholder Navbar
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="index.html"><img src="assets/logo_img_coffeebean.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,16 +53,199 @@
                 </ul>
             </div>
           </nav>
+          End of Placeholder Navbar -->
     </header>
 
-    <main></main>
+    <main>
+        <div class="container">
+
+            <!-- Masonry/Column of Cards -->
+            <div class="row">
+                <div class="col">
+                    <div class="card-columns">
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5y50vco1Y8hb45P1eDX4REH6hYV1iqf45dA&usqp=CAU" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Card title that wraps to a new line</h5>
+
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+
+                        <div class="card p-3">
+                            <blockquote class="blockquote mb-0 card-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSJKXSNmfSHqmgUqnVVW59Rrm7jXXgRF18jPg&usqp=CAU" class="card-img-top" alt="...">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-primary text-white text-center p-3">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+
+                                <footer class="blockquote-footer text-white">
+                                    <small>
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+
+                                <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
+
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="https://images.ctfassets.net/f1fikihmjtrp/7yd2StqnCWQOAMysRHs7L3/1bebd5a4ebd45551d5dcac64446de1f5/09366-Group-5-4ww.jpg?q=80&w=200&h=200" class="card-img-top" alt="...">
+                        </div>
+
+                        <div class="card p-3 text-right">
+                            <blockquote class="blockquote mb-0">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+
+                                <footer class="blockquote-footer">
+                                    <small class="text-muted">
+                                        Someone famous in <cite title="Source Title">Source Title</cite>
+                                    </small>
+                                </footer>
+                            </blockquote>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+
+                                <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+
+            <!-- When images are different sizes -->
+            <!-- Grid of Cards -->
+            <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+                <div class="col mb-4 card">
+                    <img src="https://i.pinimg.com/236x/a4/42/d6/a442d6fec119d970d4ba41cac2a2c5b5--crayons-on-fabric-fabric-painting.jpg" class="card-img-top" alt="...">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+
+                <div class="col mb-4 card">
+                    <img src="https://content.etilize.com/images/200/11961119.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+
+                <div class="col mb-4 card">
+                    <img src="https://dmzn2b8hkpq8b.cloudfront.net/images/products/515x515/S288470.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                    </div>
+                </div>
+
+                <div class="col mb-4 card">
+                    <img src="https://i.pinimg.com/236x/d5/00/cb/d500cb183544aecc47a9b0dad18bc78d.jpg" class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="btn-group" role="group" aria-label="Button Group Example">
+                        <button type="button" class="btn btn-secondary">Left</button>
+                        <button type="button" class="btn btn-secondary">Middle</button>
+                        <button type="button" class="btn btn-secondary">Right</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <nav class="" aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            </li>
+
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+
+                            <li class="page-item active" aria-current="page">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+                            <li class="page-item disabled"><a class="page-link" tabindex="-1" aria-disabled="true" href="#">...</a></li>
+
+                            <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+                            <li class="page-item"><a class="page-link" href="#">11</a></li>
+
+                            <li class="page-item"><a class="page-link" href="#">12</a></li>
+
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer></footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
