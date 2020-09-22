@@ -32,18 +32,3 @@ section.jumbotron-fluid {
 .bg-transparent {
     background-color: rgba(209, 209, 209, 0.5) !important;
 }
-
-/* Responsive tablet screens */
-@media (min-width: 520px) {
-
-};  
-
-/* Responsive large laptop screens */
-@media (min-width: 768px) {
-
-};
-
-/* Responsive larger laptop screens */
-@media (min-width: 960px) {
-
-};
