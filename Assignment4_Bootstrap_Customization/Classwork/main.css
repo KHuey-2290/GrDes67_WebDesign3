@@ -5,3 +5,28 @@ body {
 nav .navbar-brand img {
     max-width: 45px;
 }
+
+.alert-danger {
+    color: rgb(81, 50, 110);
+    background-color: hotpink;
+    border-color: indigo;
+}
+
+.card {
+    padding: 0px;
+    margin: 1rem;
+}
+
+.row-cols-1>* {
+
+}
+
+nav ul {
+    font-size: 30px;
+    padding: 0px 20px;
+
+}
+
+nav ul li {
+    display: inline-block;
+}
