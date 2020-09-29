@@ -1,34 +1,23 @@
-body {
-    padding-bottom: 56px;
+nav {
+    padding: 0px 50px;
 }
 
 nav .navbar-brand img {
     max-width: 45px;
 }
 
-.nav-link img {
-    width: auto;
-    max-height: 25px;
-}
-
-.navbar-collapse p {
-    font-size: 22px;
-    font-weight: 300;
-    align-items: flex-end;
-    padding-bottom: 0px;
-}
-
 .navbar-collapse ul {
     position: absolute;
-    right: 0;
+    right: 50px;
+}
+
+.jumbotron {
+    margin-top: 71px;
+    height: 200px;
 }
 
 section.jumbotron-fluid {
     width: 100%;
     background-size: cover;
-    background-position: left;
-}
-
-.bg-transparent {
-    background-color: rgba(209, 209, 209, 0.5) !important;
+    background-position: center;
 }
