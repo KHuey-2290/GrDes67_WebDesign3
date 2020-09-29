@@ -12,26 +12,28 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
 
-    <title>UI Elements</title>
+    <title>Cheese the Day!</title>
 
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
             <a class="navbar-brand" href="index.html"><img src="Assets/cheese_logo.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                
+            <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item px-sm-2 px-md-3 px-lg-4"></li>
+                    <li class="nav-item px-sm-2 px-md-3 px-lg-4">
                         <a class="nav-link text-warning" href="Pages/history.html">History</a>
                     </li>
 
                     <li class="nav-item px-sm-2 px-md-3 px-lg-4">
-                        <a class="nav-link text-warning" href="Pages/drinks.html">Drinks</a>
+                        <a class="nav-link text-warning" href="Pages/cuisine.html">Cuisine</a>
                     </li>
 
                     <li class="nav-item px-sm-2 px-md-3 px-lg-4">
@@ -46,11 +48,11 @@
         <section class="jumbotron jumbotron-fluid" style="background-image: url(Assets/cheese_jumbotron.jpg);">
         </section>
 
-        <!-- START THE FEATURETTES -->
+        <!-- START THE FEATURETTE -->
         <section class="featurettes p-5">
             <div class="row featurette">
                 <div class="col">
-                    <h2 class="featurette-heading display-3 mb-5">Cheese on Toast <span class="text-muted">Port-Salut</span></h2>
+                    <h2 class="featurette-heading display-3 mb-5">Cheese on Toast</h2>
 
                     <p class="lead mb-5">Port-salut cheddar red leicester. Fromage frais fromage frais danish fontina cheese and biscuits cheeseburger pepper jack lancashire halloumi. Smelly cheese cut the cheese squirty cheese hard cheese cheddar feta cream cheese jarlsberg. Feta.</p>
                     
@@ -69,7 +71,7 @@
         <!-- END THE FEATURETTES -->
 
         <!-- Cards Grid 1x4 2x2 4x1 -->
-        <section class="container">
+        <section class="container card-grid">
             <h1 class="mb-4">4 Cheeses of the Week!</h1>
 
             <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
@@ -77,7 +79,7 @@
                     <img src="Assets/cheddar.jpg" class="card-img-top pt-3" alt="...">
                     
                     <div class="card-body">
-                        <h5 class="card-title">Cheddar</h5>
+                        <h3 class="card-title">Cheddar</h5>
 
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
@@ -87,7 +89,7 @@
                     <img src="Assets/blue_cheese.jpg" class="card-img-top pt-3" alt="...">
 
                     <div class="card-body">
-                        <h5 class="card-title">Blue Cheese</h5>
+                        <h3 class="card-title">Blue Cheese</h5>
 
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
@@ -97,7 +99,7 @@
                     <img src="Assets/mozzarella.jpg" class="card-img-top pt-3" alt="...">
 
                     <div class="card-body">
-                        <h5 class="card-title">Mozzarella</h5>
+                        <h3 class="card-title">Mozzarella</h5>
 
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                     </div>
@@ -107,7 +109,7 @@
                     <img src="Assets/parmesan.jpg" class="card-img-top pt-3" alt="...">
 
                     <div class="card-body">
-                        <h5 class="card-title">Parmesan</h5>
+                        <h3 class="card-title">Parmesan</h5>
 
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     </div>
@@ -117,7 +119,25 @@
         <!-- End of Cards Grid 1x4 2x2 4x1 -->
     </main>
 
-    <footer></footer>
+    <footer class="flex fixed-bottom">
+        <p>Cheese the Day!</p>
+
+        <nav class=" flex footer-navbar">
+            <ul class="flex flex-footer">
+                <li class="nav-item pl-sm-2 pl-md-4"></li>
+                    <a class="nav-link" href="https://www.facebook.com/cheesedotcom">
+                        <img src="Assets/facebook_icon.png" alt="facebook icon link"/>
+                    </a>
+                </li>
+
+                <li class="nav-item pl-sm-2 pl-md-4">
+                    <a class="nav-link" href="https://twitter.com/cheesedotcom">
+                        <img src="Assets/twitter.png" alt="twitter icon link"/>
+                    </a>
+                </li>
+            </ul>
+          </nav>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

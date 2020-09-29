@@ -1,18 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* 
+
+font-family: 'Josefin Sans', sans-serif;
+
+font-family: 'Montserrat', sans-serif;
+
+*/
+
 body {
-    background-color: rgb(240, 230, 140);
+    background-color: #f0e68c;
+
 }
 
-nav {
+header nav {
     padding: 0px 50px;
+    padding-bottom: 50px;
+    background-color: #15015E;
+}
+
+.nav-item a, p {
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav .navbar-brand img {
     max-width: 45px;
 }
 
+#navbarSupportedContent {
+    background-color: #15015E;
+}
+
 .navbar-collapse ul {
     position: absolute;
     right: 50px;
+}
+
+.active-link {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .jumbotron {
@@ -24,4 +52,60 @@ section.jumbotron-fluid {
     width: 100%;
     background-size: cover;
     background-position: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #15015E;
+}
+
+p {
+    color: #15015E;
+}
+
+.card {
+    background-color: #AB97F0;
+}
+
+.card-grid {
+    margin-bottom: 100px;
+}
+
+.card {
+    margin: 1rem;
+}
+
+.row-cols-1>* {
+
+}
+
+footer {
+    height: 71px;
+    padding: 10px 50px;
+    background-color: #15015E;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    color: #F2DB02;
+    margin-bottom: 0px;
+    align-self: center;
+    font-size: 20px;
+}
+
+footer img {
+    max-height: 25px;
+}
+
+.flex-footer {
+    position: absolute;
+    right: 50px;
+}
+
+.flex-footer .nav-item {
+    justify-self: flex-end;
 }

@@ -5,69 +5,84 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" media="screen"/>
-    <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
-
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>A Website for the Caffeine of Heart</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css"/>
 
-    <style>
-        body {
-            padding-top: 100px;
-        }
-        nav .navbar-brand img {
-            max-width: 45px;
-        }
+    <title>Cheese the Day!</title>
 
-        h1 {
-            font-family: 'Yesteryear', cursive;
-            font-size: 60px;
-        }
-    </style>
 </head>
 
-<body class="bg-light">
+<body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="../index.html"><img src="../assets/logo_img_coffeebean.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a class="navbar-brand" href="../index.html"><img src="../Assets/cheese_logo.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                
+            <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item px-sm-2 px-md-3 px-lg-4">
-                        <a class="nav-link" href="history.html">History</a>
+                        <a class="nav-link text-warning" href="history.html">History</a>
                     </li>
 
                     <li class="nav-item px-sm-2 px-md-3 px-lg-4">
-                        <a class="nav-link" href="drinks.html">Drinks</a>
+                        <a class="nav-link text-warning" href="cuisine.html">Cuisine</a>
                     </li>
 
                     <li class="nav-item px-sm-2 px-md-3 px-lg-4">
-                        <a class="nav-link" href="food.html">Food</a>
-                    </li>
-
-                    <li class="nav-item active px-sm-2 px-md-3 px-lg-4">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active-link text-warning" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
           </nav>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <img src="../assets/coffee_contact.jpg" alt="Two cups of black coffee talking to each other" class="w-100 my-5"/>
+    <main>
+        <section class="jumbotron jumbotron-fluid" style="background-image: url(../Assets/contact_jumbotron.jpg);">
+        </section>
 
-                <h1 class="text-center mb-5 px-5">Coming Soon!</h1>
+        <!-- Card Grid -->
+        <section class="container card-grid">
+
+            <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+                <div class="col mx-auto my-5 card">
+                    <img src="../Assets/cheese_contact.jpg" class="card-img-top pt-3" alt="...">
+                    
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Page Coming Soon!</h5>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <!-- END Card Grid -->
+    </main>
+
+    <footer class="flex fixed-bottom">
+        <p>Cheese the Day!</p>
+
+        <nav class=" flex footer-navbar">
+            <ul class="flex flex-footer">
+                <li class="nav-item pl-sm-2 pl-md-4"></li>
+                    <a class="nav-link" href="https://www.facebook.com/cheesedotcom">
+                        <img src="../Assets/facebook_icon.png" alt="facebook icon link"/>
+                    </a>
+                </li>
+
+                <li class="nav-item pl-sm-2 pl-md-4">
+                    <a class="nav-link" href="https://twitter.com/cheesedotcom">
+                        <img src="../Assets/twitter.png" alt="twitter icon link"/>
+                    </a>
+                </li>
+            </ul>
+          </nav>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
