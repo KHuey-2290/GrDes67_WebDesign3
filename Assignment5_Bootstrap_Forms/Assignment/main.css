@@ -33,11 +33,6 @@ nav .navbar-brand img {
     background-color: #15015E;
 }
 
-.navbar-collapse ul {
-    position: absolute;
-    right: 50px;
-}
-
 .active-link {
     text-decoration: underline;
     font-weight: bold;
@@ -63,6 +58,17 @@ p {
     color: #15015E;
 }
 
+main {
+    margin-bottom: 200px;
+}
+
+#buttonCheckOut {
+    background-color: rgb(194, 55, 55);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #F2DB02;
+}
 
 footer {
     height: 71px;
