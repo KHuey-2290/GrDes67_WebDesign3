@@ -15,6 +15,7 @@ body {
 
 }
 
+/* START Header, Navbar, jumbotron */
 header nav {
     padding: 0px 50px;
     padding-bottom: 50px;
@@ -48,6 +49,7 @@ section.jumbotron-fluid {
     background-size: cover;
     background-position: center;
 }
+/* END Header, Navbar, jumbotron */
 
 h1, h2, h3 {
     font-family: 'Josefin Sans', sans-serif;
@@ -58,17 +60,57 @@ p {
     color: #15015E;
 }
 
+.card {
+    background-color: rgb(194, 134, 55);
+}
+
+.card-grid {
+    margin-bottom: 100px;
+}
+
+.container-checkbox {
+    margin: 7px;
+    height: 20px;
+    width: 20px;
+}
+
 main {
     margin-bottom: 200px;
 }
 
-#buttonCheckOut {
+#buttonCheckOut, #buttonGoBack {
     background-color: rgb(194, 55, 55);
     font-family: 'Montserrat', sans-serif;
     border-radius: 15px;
     font-size: 20px;
     color: #F2DB02;
 }
+
+/* START Form */
+#myForm {
+    padding-top: 100px;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+}
+
+.btn-submit {
+    background-color: rgb(194, 55, 55);
+    color: #F2DB02;
+}
+/* END Form */
 
 footer {
     height: 71px;

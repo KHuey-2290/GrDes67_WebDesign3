@@ -55,10 +55,84 @@
         <section class="jumbotron jumbotron-fluid" style="background-image: url(Assets/cheese_jumbotron.jpg);">
         </section>
 
+        <!-- START Cards Grid  -->
+        <div class="container mt-5" id="cheesySelections">
+            <div class="row">
+                <div class="col">
+                    <h1 class="mb-4">Cheesy Selections</h1>
+                </div>
+            </div>
+        </div>
 
+        <section class="container card-grid" id="myCardGrid">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col">
+                    <div class="mb-4 card">
+                        <img src="Assets/cheddar.jpg" class="card-img-top" alt="...">
+
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        
+                        <div class="card-body">
+                            <h3 class="card-title">Cheddar</h5>
+    
+                            <p class="card-text">Queso cheese triangles ricotta. Fromage frais airedale cottage cheese port-salut smelly cheese boursin squirty cheese macaroni cheese. </p>
+                        </div>
+                    </div>
+    
+                    <div class="mb-4 card">
+                        <img src="Assets/blue_cheese.jpg" class="card-img-top" alt="...">
+
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+    
+                        <div class="card-body">
+                            <h3 class="card-title">Blue Cheese</h5>
+    
+                            <p class="card-text">Blue castello danish fontina bocconcini. Squirty cheese melted cheese lancashire halloumi chalk and cheese gouda emmental fromage frais. </p>
+                        </div>
+                    </div>
+    
+                    <div class="mb-4 card">
+                        <img src="Assets/mozzarella.jpg" class="card-img-top" alt="...">
+
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+    
+                        <div class="card-body">
+                            <h3 class="card-title">Mozzarella</h5>
+    
+                            <p class="card-text">Cheese strings port-salut cheesy grin. Melted cheese brie pecorino chalk and cheese cheese slices camembert de normandie ricotta cheese slices. </p>
+                        </div>
+                    </div>
+    
+                    <div class="mb-4 card">
+                        <img src="Assets/parmesan.jpg" class="card-img-top" alt="...">
+                        
+                        <label class="container-checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+    
+                        <div class="card-body">
+                            <h3 class="card-title">Parmesan</h5>
+    
+                            <p class="card-text">Goat cheese on toast pepper jack. Cream cheese airedale goat everyone loves fondue cheesy feet bavarian bergkase everyone loves.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Cards Grid -->
 
         <!-- START Button for Form -->
-        <div class="container">
+        <div class="container" id="myButton">
             <div class="row">
                 <div class="col w3-center">
                     <button class="p-3" id="buttonCheckOut">Checkout</button>
@@ -68,67 +142,483 @@
         <!-- END Button for Form -->
 
         <!-- START of Form -->
-        <div class="container">
+        <section class="container px-5" id="myForm">
             <div class="row">
                 <div class="col">
-                    <form method="POST" action="" enctype="multipart/form-data" class="needs-validation" id="myForm" novalidate>
-                        <div class="form-group">
-                            <label for="inputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" required>
+                    <h1 class="text-center">Checkout</h1>
+                </div>
+            </div>
 
-                            <div class="valid-feedback">Good job! Thank you for sending us your information.</div>
+            <div class="row">
+                <div class="col-md-4 order-md-2 mb-5">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-muted">Your cart</span>
 
-                            <div class="invalid-feedback">Something went wrong! Please check your information given.</div>
+                        <span class="badge badge-secondary badge-pill">3</span>
+                    </h4>
+
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Cheddar</h6>
+
+                                <small class="text-muted">Queso cheese triangles ricotta. Fromage frais airedale cottage cheese port-salut smelly cheese boursin squirty cheese macaroni cheese.</small>
+                            </div>
                             
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <span class="text-muted">$12</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Blue Cheese</h6>
+
+                                <small class="text-muted">Blue castello danish fontina bocconcini. Squirty cheese melted cheese lancashire halloumi chalk and cheese gouda emmental fromage frais.</small>
+                            </div>
+
+                            <span class="text-muted">$8</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between lh-condensed">
+                            <div>
+                                <h6 class="my-0">Parmesan</h6>
+
+                                <small class="text-muted">Goat cheese on toast pepper jack. Cream cheese airedale goat everyone loves fondue cheesy feet bavarian bergkase everyone loves.</small>
+                            </div>
+                            
+                            <span class="text-muted">$5</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>CUTTHECHEESE</small>
+                            </div>
+
+                            <span class="text-success">-$5</span>
+                        </li>
+
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (USD)</span>
+                            <strong>$20</strong>
+                        </li>
+                    </ul>
+                
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-secondary">Redeem</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-8 order-md-1 mt-5">
+                    <h4 class="mb-3">Billing address</h4>
+
+                    <form class="needs-validation" novalidate>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Viola" value="" required>
+
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Davis" value="" required>
+
+                                <div class="invalid-feedback">
+                                    Valid last name is required.
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="username">Username</label>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">@</span>
+                                </div>
+
+                                <input type="text" class="form-control" id="username" placeholder="Username" required>
+
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Your username is required.
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                        </div>
+                
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="country">Country</label>
+
+                                <select class="custom-select d-block w-100" id="country" required>
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="state">State</label>
+
+                                <select class="custom-select d-block w-100" id="state" required>
+                                    <option value="">Choose...</option>
+                                    <option>Alabama</option>
+                                    <option>Alaska</option>
+                                    <option>Arizona</option>
+                                    <option>Arkansas</option>
+                                    <option>California</option>
+                                    <option>Colorado</option>
+                                    <option>Connecticut</option>
+                                    <option>Delaware</option>
+                                    <option>Floirda</option>
+                                    <option>Georgia</option>
+                                    <option>Hawaii</option>
+                                    <option>Idaho</option>
+                                    <option>Illinois</option>
+                                    <option>Indiana</option>
+                                    <option>Iowa</option>
+                                    <option>Kansas</option>
+                                    <option>Kentucky</option>
+                                    <option>Louisiana</option>
+                                    <option>Maine</option>
+                                    <option>Maryland</option>
+                                    <option>Massachusetts</option>
+                                    <option>Michigan</option>
+                                    <option>Minnesota</option>
+                                    <option>Mississippi</option>
+                                    <option>Missouri</option>
+                                    <option>Montana</option>
+                                    <option>Nebraska</option>
+                                    <option>Nevada</option>
+                                    <option>New Hampshire</option>
+                                    <option>New Jersey</option>
+                                    <option>New Mexico</option>
+                                    <option>New York</option>
+                                    <option>North Carolina</option>
+                                    <option>Ohio</option>
+                                    <option>Oklahoma</option>
+                                    <option>Oregon</option>
+                                    <option>Pennsylvania</option>
+                                    <option>Rhode Island</option>
+                                    <option>South Carolina</option>
+                                    <option>South Dakota</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Utah</option>
+                                    <option>Vermont</option>
+                                    <option>Virginia</option>
+                                    <option>Washington</option>
+                                    <option>West Virginia</option>
+                                    <option>Wisconsin</option>
+                                    <option>Wyoming</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please provide a valid state.
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="zip">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="12345" required>
+
+                                <div class="invalid-feedback">
+                                    Zip code required.
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="inputPassword1">Password</label>
-                            <input type="password" class="form-control" id="inputPassword1" required>
+                        <hr class="mb-4">
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="sameAddress">
+                            <label class="custom-control-label" for="sameAddress">Shipping address is the same as my billing address</label>
                         </div>
 
-                        <div class="form-group">
-                            <label for="formControlSelect1">Example select</label>
-                            <select class="form-control" id="formControlSelect1" required>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="saveInfo">
+                            <label class="custom-control-label" for="saveInfo">Save this information for next time</label>
                         </div>
 
-                        <div class="form-group">
-                            <label for="formControlSelect2">Example multiple select</label>
-                            <select multiple class="form-control" id="formControlSelect2" required>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+                        <hr class="mb-4">
 
-                            <small class="form-form text-muted">Hold [CTRL] or [COMAND] and click multiple elements.</small>
+                        <form class="needs-validation" id="myShippingAddress" novalidate>
+                            <h4 class="mb-3">Shipping Address</h4>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" placeholder="Viola" value="" required>
+    
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Davis" value="" required>
+    
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="username">Username</label>
+    
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">@</span>
+                                    </div>
+    
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+    
+                                    <div class="invalid-feedback" style="width: 100%;">
+                                        Your username is required.
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+    
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address for shipping updates.
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+    
+                                <div class="invalid-feedback">
+                                    Please enter your shipping address.
+                                </div>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                                <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                            </div>
+                    
+                            <div class="row">
+                                <div class="col-md-5 mb-3">
+                                    <label for="country">Country</label>
+    
+                                    <select class="custom-select d-block w-100" id="country" required>
+                                        <option value="">Choose...</option>
+                                        <option>United States</option>
+                                    </select>
+    
+                                    <div class="invalid-feedback">
+                                        Please select a valid country.
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-4 mb-3">
+                                    <label for="state">State</label>
+    
+                                    <select class="custom-select d-block w-100" id="state" required>
+                                        <option value="">Choose...</option>
+                                        <option>Alabama</option>
+                                        <option>Alaska</option>
+                                        <option>Arizona</option>
+                                        <option>Arkansas</option>
+                                        <option>California</option>
+                                        <option>Colorado</option>
+                                        <option>Connecticut</option>
+                                        <option>Delaware</option>
+                                        <option>Floirda</option>
+                                        <option>Georgia</option>
+                                        <option>Hawaii</option>
+                                        <option>Idaho</option>
+                                        <option>Illinois</option>
+                                        <option>Indiana</option>
+                                        <option>Iowa</option>
+                                        <option>Kansas</option>
+                                        <option>Kentucky</option>
+                                        <option>Louisiana</option>
+                                        <option>Maine</option>
+                                        <option>Maryland</option>
+                                        <option>Massachusetts</option>
+                                        <option>Michigan</option>
+                                        <option>Minnesota</option>
+                                        <option>Mississippi</option>
+                                        <option>Missouri</option>
+                                        <option>Montana</option>
+                                        <option>Nebraska</option>
+                                        <option>Nevada</option>
+                                        <option>New Hampshire</option>
+                                        <option>New Jersey</option>
+                                        <option>New Mexico</option>
+                                        <option>New York</option>
+                                        <option>North Carolina</option>
+                                        <option>Ohio</option>
+                                        <option>Oklahoma</option>
+                                        <option>Oregon</option>
+                                        <option>Pennsylvania</option>
+                                        <option>Rhode Island</option>
+                                        <option>South Carolina</option>
+                                        <option>South Dakota</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Utah</option>
+                                        <option>Vermont</option>
+                                        <option>Virginia</option>
+                                        <option>Washington</option>
+                                        <option>West Virginia</option>
+                                        <option>Wisconsin</option>
+                                        <option>Wyoming</option>
+                                    </select>
+    
+                                    <div class="invalid-feedback">
+                                        Please provide a valid state.
+                                    </div>
+                                </div>
+    
+                                <div class="col-md-3 mb-3">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" class="form-control" id="zip" placeholder="12345" required>
+    
+                                    <div class="invalid-feedback">
+                                        Zip code required.
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+    
+                        <hr class="mb-4">
+                
+                        <h4 class="mb-3">Payment</h4>
+                
+                        <div class="d-block my-3">
+                            <div class="custom-control custom-radio">
+                                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                                <label class="custom-control-label" for="credit">Credit card</label>
+                            </div>
+
+                            <div class="custom-control custom-radio">
+                                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="debit">Debit card</label>
+                            </div>
+
+                            <div class="custom-control custom-radio">
+                                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                                <label class="custom-control-label" for="paypal">PayPal</label>
+                            </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="exampleFormControlFile1">Example file input</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1" accept="image/png" required>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-name">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="Viola Davis" required>
+
+                                <small class="text-muted">Full name as displayed on card</small>
+
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="cc-number">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="####-####-####-####" required>
+
+                                <div class="invalid-feedback">
+                                    Credit card number is required
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="check1" required>
-                            <label class="form-check-label" for="check1">Check me out!</label>
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-expiration">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="mm/yyyy" required>
+
+                                <div class="invalid-feedback">
+                                    Expiration date required
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <label for="cc-cvv">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="###" required>
+
+                                <div class="invalid-feedback">
+                                    Security code required
+                                </div>
+                            </div>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <hr class="mb-4">
+
+                        <button class="btn btn-submit btn-lg btn-block" type="submit">Continue to checkout</button>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
+        <!-- END of Form -->
+
+        <section class="container card-grid thank-you-card" id="myThankYou">
+            <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+                <div class="col mx-auto my-5 card">
+                    <img src="Assets/cheese_contact.jpg" class="card-img-top pt-3" alt="...">
+                    
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Thank Mooooo!</h1>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row" id="goBackHome">
+                <div class="col w3-center">
+                    <a href="index.html">
+                        <button class="p-3" id="buttonGoBack">Go Back to Homepage</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <!-- END of Form -->
+    
 
     <footer class="flex fixed-bottom ">
         <p>Cheese the Day!</p>
@@ -158,14 +648,25 @@
 
     <script>
         var myForm = document.getElementById("myForm");
+        var myThankYou = document.getElementById("myThankYou");
 
         myForm.style.display = "none";
+        myThankYou.style.display = "none";
+
 
         $(document).ready(function () {
             $("#buttonCheckOut").click(function() {
                 $("#myForm").toggle();
             });
-        })
+
+            $(".btn-submit").click(function () {
+                $(".thank-you-card").show();
+                $("#myForm").hide();
+                $("#myButton").hide();
+                $("#myCardGrid").hide();
+                $("#cheesySelections").hide();
+            });
+        });
 
         let form = document.getElementById("myForm");
         form.addEventListener("submit", function(evt){
