@@ -18,10 +18,58 @@
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="Assets/cheese_logo.png"></a>
 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+                
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item px-sm-2 px-md-3 px-lg-4">
+                        <a class="nav-link text-warning" href="Pages/history.html">History</a>
+                    </li>
+
+                    <li class="nav-item px-sm-2 px-md-3 px-lg-4">
+                        <a class="nav-link text-warning" href="Pages/cuisine.html">Cuisine</a>
+                    </li>
+
+                    <li class="nav-item px-sm-2 px-md-3 px-lg-4">
+                        <a class="nav-link text-warning" href="Pages/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>
     </header>
 
     <main>
+        <section class="jumbotron jumbotron-fluid" style="background-image: url(Assets/cheese_jumbotron.jpg);">
+        </section>
+
+        <!-- START THE FEATURETTE -->
+        <section class="featurettes p-5">
+            <div class="row featurette">
+                <div class="col">
+                    <h2 class="featurette-heading display-3 mb-5">Cheese on Toast</h2>
+
+                    <p class="lead mb-5">Port-salut cheddar red leicester. Fromage frais fromage frais danish fontina cheese and biscuits cheeseburger pepper jack lancashire halloumi. Smelly cheese cut the cheese squirty cheese hard cheese cheddar feta cream cheese jarlsberg. Feta.</p>
+                    
+                    <h2 class="featurette-heading display-4 my-4">Bergkase Cheesy Feet</h2>
+
+                    <p>Chalk and cheese cheese strings cottage cheese. Cheese on toast caerphilly bavarian bergkase cheesy feet cheese on toast babybel cheesy grin fromage frais. Mozzarella cheddar jarlsberg bocconcini bocconcini queso cheesecake macaroni cheese. Roquefort stilton.</p>
+
+                    <p>Macaroni cheese cheese and wine cheese triangles. Goat boursin port-salut stinking bishop babybel danish fontina cauliflower cheese fromage. Paneer smelly cheese bocconcini lancashire port-salut dolcelatte fromage manchego. Port-salut.</p>
+
+                    <p>Everyone loves everyone loves cheeseburger. Stinking bishop fromage mascarpone airedale ricotta pepper jack pecorino cauliflower cheese. Port-salut caerphilly emmental ricotta fondue stilton cottage cheese emmental. Cut the cheese cheese and biscuits cottage cheese stinking bishop red leicester goat feta cheese and biscuits. Airedale cheddar.</p>
+                </div>
+            </div>
+        
+            <hr class="featurette-divider my-5">
+        </section>
+        <!-- END THE FEATURETTES -->
+
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -83,8 +131,24 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="flex fixed-bottom ">
+        <p>Cheese the Day!</p>
 
+        <nav class=" flex footer-navbar">
+            <ul class="flex flex-footer">
+                <li class="nav-item pl-sm-2 pl-md-4"></li>
+                    <a class="nav-link" href="https://www.facebook.com/cheesedotcom">
+                        <img src="Assets/facebook_icon.png" alt="facebook icon link"/>
+                    </a>
+                </li>
+
+                <li class="nav-item pl-sm-2 pl-md-4">
+                    <a class="nav-link" href="https://twitter.com/cheesedotcom">
+                        <img src="Assets/twitter.png" alt="twitter icon link"/>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </footer>
 
     <!-- Optional JavaScript -->
