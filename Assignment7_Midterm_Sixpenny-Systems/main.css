@@ -5,4 +5,8 @@
 @import url("CSS/typography.css");
 @import url("CSS/color.css");
 @import url("CSS/layout.css");
+@import url("CSS/jumbotron.css");
 
+body {
+    background-color: rgb(255, 236, 187);
+}

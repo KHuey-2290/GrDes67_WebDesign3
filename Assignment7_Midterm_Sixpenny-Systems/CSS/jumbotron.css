@@ -1,0 +1,16 @@
+.jumbotron {
+    margin-top: 54px;
+    height: 400px;
+}
+
+section.jumbotron-fluid {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-transparent {
+    color: #091244;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 3px 3px 8px #091244;
+}

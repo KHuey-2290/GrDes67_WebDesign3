@@ -1,0 +1,20 @@
+.nav-item a, p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav .navbar-brand img {
+    max-width: 45px;
+}
+
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    border-color: rgb(255,102,203);
+}
+
+.navbar, footer {
+    background-color: #091244;
+}
