@@ -1,4 +1,4 @@
-.nav-item a, p {
+.nav-item a {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,7 +15,6 @@ footer nav .nav .nav-item img {
 }
 
 .active {
-    text-decoration: underline;
     font-weight: bold;
 }
 

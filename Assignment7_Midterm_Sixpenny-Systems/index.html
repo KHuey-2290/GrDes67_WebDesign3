@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+                    <nav class="navbar navbar-expand-md navbar-dark fixed-top px-4">
                         <a class="navbar-brand" href="index.html">
                             <img src="Assets/logo.png" alt="SixPenny Skein Systems Logo: ball of yellow yarn with crossed knitting needles sticking out"/>
                         </a>
@@ -33,6 +33,10 @@
                         
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-warning" href="index.html">Home</a>
+                                </li>
+
                                 <li class="nav-item">
                                     <a class="nav-link text-warning" href="Pages/About.html">About</a>
                                 </li>
@@ -55,7 +59,7 @@
     <main>
         <section class="jumbotron jumbotron-fluid" style="background-image: url(Assets/jumbotron_homepage.jpg);">
             <div class="container">
-                <h1 class="py-2 px-3 mx-n3 mb-5 mb-lg-3 bg-transparent display-3">SixPenny Skein Systems</h1>
+                <h1 class="py-2 px-3 mx-n3 mb-5 mb-lg-3 bg-transparent display-3">SixPenny Systems</h1>
             </div>
         </section>
     </main>
@@ -65,6 +69,16 @@
             <div class="row">
                 <div class="col">
                     <nav class="col-12 navbar fixed-bottom py-3 justify-content-center">
+                        <h3 class="col-12 text-center text-warning">Contact Us</h3>
+
+                        <p class="col-12 text-center text-warning">
+                            Email: sixpennysystems@gmail.com
+                        </p>
+
+                        <p class="col-12 text-center text-warning">
+                            Telephone: 1(310) 123-4567
+                        </p>
+
                         <ul class="nav pb-2">
                             <li class="nav-item">
                                 <a class="nav-link" href="https://www.facebook.com/LionBrandYarns">
@@ -85,12 +99,61 @@
                             </li>
                         </ul>
 
-                        <p class="col-12 text-center text-warning">© 2020 SixPenny Skein Systems</p>
+                        <p class="col-12 text-center text-warning">© 2020 SixPenny Systems</p>
                     </nav>
                 </div>
             </div>
         </div>
     </footer>
+    
+    <!-- Modal Begins Here -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title col" id="ModalLabel">Subscribe to our newsletter!</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="col">Signup for our monthly newsletter to get the latest news, updates and amazing offers delivered directly to your inbox.</p>
+
+                    <form>
+                        <div class="form-group col">
+                            <label for="inputFullName">Full Name</label>
+                            <input type="text" class="form-control" id="inputFullName" placeholder="Jane Smith">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="inputEmail">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="janesmith123@email.com">
+                        </div>
+
+                        <div class="col">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                <label class="custom-control-label" for="customSwitch1">Yes, I would like monthly newsletters.</label>
+                            </div>
+                            
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">No, I do not want monthly newsletters.</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer col">
+                    <button type="button" class="btn btn-secondary text-dark" data-dismiss="modal">Not Now</button>
+                    <button type="button" class="btn btn-subscribe text-light" data-dismiss="modal">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
