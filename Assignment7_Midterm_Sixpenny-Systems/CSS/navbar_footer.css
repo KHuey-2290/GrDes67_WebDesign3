@@ -6,6 +6,14 @@ nav .navbar-brand img {
     max-width: 45px;
 }
 
+footer nav .nav .nav-item img {
+    max-height: 20px;
+}
+
+.form-inline, .navbar ul li {
+    padding-left: 20px;
+}
+
 .active {
     text-decoration: underline;
     font-weight: bold;
