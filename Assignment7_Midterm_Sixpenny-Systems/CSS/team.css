@@ -1,0 +1,26 @@
+.carousel {
+    margin-top: 56px;
+}
+
+.carousel-image {
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.featurette-team {
+    margin-top: 100px;
+}
+
+.featurette h2 {
+    color: brown;
+}
+
+.featurette img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+hr.featurette-divider {
+    border-top: 1px solid brown;
+}
