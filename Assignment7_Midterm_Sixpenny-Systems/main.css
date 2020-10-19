@@ -6,7 +6,17 @@
 @import url("CSS/color.css");
 @import url("CSS/layout.css");
 @import url("CSS/jumbotron_modal.css");
+@import url("CSS/home.css");
 
 body {
     background-color: rgb(255, 236, 187);
+}
+
+.alert {
+    margin-top: 56px;
+}
+
+main {
+    margin-bottom: 350px;
+    margin-top: 100px;
 }
