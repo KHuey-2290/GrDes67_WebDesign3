@@ -1,14 +1,25 @@
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.text-column-img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-      font-size: 3.5rem;
-    }
+.text-column-img img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.text-column-3 h2, p {
+    text-align: center;
+}
+
+.text-column-3 h2 {
+    color: rgb(161, 45, 45);
+}
+
+.text-column-3 .btn {
+    padding: 10px 20px;
+    background-color: #091244;
+    color: cornsilk;
 }
