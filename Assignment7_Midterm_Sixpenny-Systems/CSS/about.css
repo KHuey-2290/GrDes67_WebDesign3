@@ -1,0 +1,14 @@
+.jumbo-about {
+    height: 300px;
+}
+
+.about-textbox h1 {
+    color: brown;
+    padding-bottom: 15px;
+}
+
+.about-textbox p {
+    color: #091244;
+    padding-bottom: 20px;
+    line-height: 26px;
+}
