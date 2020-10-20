@@ -4,7 +4,7 @@ $(document).ready(function() {
     $("#myModal").modal('show');
 
     $(".carousel").carousel({
-        interval : 3000,
+        interval : 4000,
         keyboard : false
     });
 });

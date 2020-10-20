@@ -2,6 +2,10 @@
     height: 300px;
 }
 
+.about-textbox {
+    max-width: 700px;
+}
+
 .about-textbox h1 {
     color: brown;
     padding-bottom: 15px;
@@ -11,4 +15,5 @@
     color: #091244;
     padding-bottom: 20px;
     line-height: 26px;
+    text-align: justify;
 }

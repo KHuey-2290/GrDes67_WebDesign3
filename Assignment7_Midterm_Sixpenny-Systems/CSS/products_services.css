@@ -1,5 +1,6 @@
 .alert {
-    margin-top: 56px;}
+    margin: 60px 5px 0px;
+}
 
 .products-title {
     color: brown;
@@ -8,4 +9,17 @@
 .products-subheader {
     color: brown;
     font-size: 25px;
+    text-decoration: underline;
+}
+
+.product-page {
+    margin-top: 150px;
+}
+
+.card h4, p {
+    color: #091244;
+}
+
+.card h4 {
+    font-weight: bold;
 }

@@ -10,12 +10,12 @@
     border-radius: 100px;
 }
 
-.text-column-3 h2, p {
+.text-column-3 h3 {
     text-align: center;
-}
-
-.text-column-3 h2 {
+    text-decoration: underline;
     color: brown;
+    font-weight: bold;
+
 }
 
 .text-column-3 .btn {
