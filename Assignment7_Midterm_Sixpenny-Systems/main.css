@@ -3,8 +3,6 @@
 @import url("CSS/team.css");
 @import url("CSS/navbar_footer.css");
 @import url("CSS/typography.css");
-@import url("CSS/color.css");
-@import url("CSS/layout.css");
 @import url("CSS/jumbotron_modal.css");
 @import url("CSS/home.css");
 
@@ -13,5 +11,5 @@ body {
 }
 
 main {
-    margin-bottom: 350px;
+    margin-bottom: 150px;
 }

@@ -9,11 +9,17 @@
 }
 
 .featurette-team {
-    margin-top: 100px;
+    margin-top: 150px;
+}
+
+.featurette-title {
+    font-weight: 600;
+    color: brown;
+    padding-bottom: 100px;
 }
 
 .featurette h2 {
-    color: brown;
+    color: #091244;
 }
 
 .featurette img {
