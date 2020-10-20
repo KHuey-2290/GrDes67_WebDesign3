@@ -21,6 +21,11 @@
     color: #091244;
 }
 
+.card p {
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
 .card h4 {
     font-weight: bold;
 }
