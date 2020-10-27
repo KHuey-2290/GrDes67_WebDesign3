@@ -1,0 +1,122 @@
+.gradient {
+    height: 300px;
+}
+
+/* Linear-gradient */
+#gradient1 {
+    background-image: linear-gradient(to right, red, blue);
+}
+
+#gradient2 {
+    background-image: linear-gradient(to left, red, blue);
+}
+
+#gradient3 {
+    background-image: linear-gradient(to top left, red, blue);
+}
+
+#gradient4 {
+    background-image: linear-gradient(to bottom, red, blue);
+}
+
+#gradient5 {
+    background-image: linear-gradient(0deg, red, indigo);
+}
+
+#gradient6 {
+    background-image: linear-gradient(45deg, red, indigo);
+}
+
+#gradient7 {
+    background-image: linear-gradient(90deg, red, indigo);
+}
+
+#gradient8 {
+    background-image: linear-gradient(180deg, red, indigo);
+}
+
+#gradient9 {
+    background-image: linear-gradient(210deg, red, indigo);
+}
+
+#gradient10 {
+    background-image: linear-gradient(270deg, red, indigo);
+}
+
+#gradient11 {
+    background-image: linear-gradient(to right, rgb(255, 115, 0) 10%, rgb(0, 255, 234) 25%);
+}
+
+#gradient12 {
+    background-image: linear-gradient(to right, rgb(255, 115, 0), rgb(0, 255, 234) 25%, rgb(73, 23, 190) 50%, rgb(255, 60, 141) 75%, rgb(210, 255, 86));
+}
+
+/* Radial-gradient */
+#gradient13 {
+    background-image: repeating-linear-gradient(to bottom right, rgb(255, 60, 141), rgb(73, 23, 190) 10%, rgb(0, 255, 234) 20%, rgb(255, 60, 141) 30%);
+}
+
+#gradient14 {
+    background-image: radial-gradient(rgb(255, 60, 141), rgb(73, 23, 190));
+}
+
+#gradient15 {
+    background-image: radial-gradient(circle, rgb(180, 255, 60), rgb(73, 23, 190));
+}
+
+#gradient16 {
+    background-image: radial-gradient(circle farthest-side at 90%, rgb(210, 255, 86), rgb(187, 0, 78));
+}
+
+#gradient17 {
+    background-image: radial-gradient(circle closest-side at 90%, rgb(0, 255, 234), rgb(255, 115, 0));
+}
+
+#gradient18 {
+    background-image: radial-gradient(circle closest-corner at 10%, rgb(255, 60, 141), rgb(73, 23, 190));
+}
+
+#gradient19 {
+    background-image: radial-gradient(circle farthest-corner at 10%, rgb(0, 255, 234), rgb(73, 23, 190));
+}
+
+#gradient20 {
+    background-image: radial-gradient(circle closest-corner at 90% 10%, rgb(255, 60, 141), rgb(73, 23, 190));
+}
+
+#gradient21 {
+    background-image: radial-gradient(circle farthest-corner at 90% 10%, rgb(255, 60, 141), rgb(73, 23, 190));
+}
+
+/* Playing around with gradients */
+#gradient22 {
+    background-image: repeating-linear-gradient(29deg, rgb(244,7,4) 0%, rgb(9,9,121) 7%, rgb(236,5,242) 15%, rgb(5,187,38) 22%, rgb(224,17,198) 30%, rgb(245,255,0) 38%, rgb(244,7,4) 47%);
+}
+
+#gradient23 {
+    background-image: linear-gradient(to right, hsl(0, 80%, 50%), hsl(120, 80%, 50%), hsl(273, 80%, 50%));
+}
+
+/* Section Transparency Overlay Image */
+section {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(210, 60%, 60%, .65);
+}
+
+section img {
+    width: 100%;
+}
+
+section h1 {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
