@@ -1,16 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+body {
+    background-color: hsl(298, 100%, 94%);
+}
+
+main {
+    margin: 100px auto;
+}
+
+h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: hsl(278, 100%, 36%);
+}
+
 /* START Navbar */
 nav a img {
     width: 100%;
 }
 
 .navbar-brand {
-    max-width: 50px;
+    width: 50px;
 }
 
 .nav-item {
     font-size: 20px;
+    font-weight: bold;
 }
 
 #gradient1 {
-    background-image: radial-gradient(circle, rgb(0, 38, 207), rgb(117, 0, 185), rgb(190, 23, 87), rgb(238, 115, 0), rgb(255, 238, 0), rgb(24, 209, 0), rgb(0, 38, 207) );
+    background-image: radial-gradient(circle, hsl(229, 100%, 41%), hsl(278, 100%, 36%), hsl(337, 78%, 42%), hsl(29, 100%, 47%), hsl(56, 96%, 40%), hsl(113, 100%, 41%), hsl(229, 100%, 41%) );
 }
+
+.nav-link {
+    text-transform: uppercase;
+    transition: background-color 1000ms;
+    padding: 15px;
+}
+
+.home-link:hover {
+    text-decoration: none;
+    background-color: hsla(113, 100%, 41%, .5);
+}
+
+.about-link:hover {
+    text-decoration: none;
+    background-color: hsla(56, 96%, 40%, .5);
+}
+
+.products-link:hover {
+    text-decoration: none;
+    background-color: hsla(29, 100%, 47%, .5);
+}
+
+.services-link:hover {
+    text-decoration: none;
+    background-color: hsla(337, 78%, 42%, .5);
+}
+
+.team-link:hover {
+    text-decoration: none;
+    background-color: hsla(278, 100%, 36%, .5);
+}
+
+.blog-link:hover {
+    text-decoration: none;
+    background-color: hsla(229, 100%, 41%, .5);
+}
+/* END Navbar */
+
+
+/* START Grid */
+.grid-card img {
+    width: 100%;
+}
+
+.grid-card {
+    padding-bottom: 30px;
+}
+/* END Grid */
