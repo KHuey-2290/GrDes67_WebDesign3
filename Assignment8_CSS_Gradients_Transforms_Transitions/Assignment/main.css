@@ -15,6 +15,16 @@ h1 {
 }
 
 /* START Navbar */
+.transition {
+    transition: width 2s, height 2s, transform 2s
+}
+
+.transition:target {
+    width: 150%;
+    height: auto;
+    transform: rotate(360deg);
+}
+
 nav a img {
     width: 100%;
 }
