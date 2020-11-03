@@ -78,4 +78,12 @@ nav a img {
 .grid-card {
     padding-bottom: 30px;
 }
+
+.rotate {
+    transition: transform 2000ms;
+}
+
+.rotate:hover {
+    transform: rotate(360deg);
+}
 /* END Grid */
