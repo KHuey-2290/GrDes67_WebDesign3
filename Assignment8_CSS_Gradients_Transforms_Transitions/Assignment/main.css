@@ -1,0 +1,16 @@
+/* START Navbar */
+nav a img {
+    width: 100%;
+}
+
+.navbar-brand {
+    max-width: 50px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+#gradient1 {
+    background-image: radial-gradient(circle, rgb(0, 38, 207), rgb(117, 0, 185), rgb(190, 23, 87), rgb(238, 115, 0), rgb(255, 238, 0), rgb(24, 209, 0), rgb(0, 38, 207) );
+}
