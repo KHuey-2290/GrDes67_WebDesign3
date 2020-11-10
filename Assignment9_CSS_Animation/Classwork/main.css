@@ -1,0 +1,21 @@
+body {
+    margin: 0px;
+    overflow: hidden; /*hides scroll bar */
+    animation-name: bodyColor;
+    animation-duration: 5000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bodyColor {
+    from {
+        background-color: hsl(0, 0%, 100%);
+    }
+
+    to {
+        background-color: hsl(313, 100%, 69%);
+    }
+};
+
+.strip {
+    height: 25vh;
+}
