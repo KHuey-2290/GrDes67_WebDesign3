@@ -6,16 +6,123 @@ body {
     animation-fill-mode: forwards;
 }
 
+.strip {
+    height: 25vh;
+    width: 100vw;
+    position: absolute;
+}
+
+#str1, #str3 {
+    right: -100%;
+    animation-name: moveToLeft;
+    animation-fill-mode: forwards;
+}
+
+#str2, #str4 {
+    left: -100%;
+    animation-name: moveToRight;
+    animation-fill-mode: forwards;
+}
+
+#str1 {
+    top: 0;
+    background-color: hsl(195, 100%, 50%);
+    animation-duration: 3000ms;
+}
+
+#str2 {
+    top: 25vh;
+    background-color: hsl(43, 74%, 49%);
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+}
+
+#str3 {
+    top: 50vh;
+    background-color: hsl(271, 100%, 50%);
+    animation-duration: 4000ms;
+    animation-timing-function: ease-in-out;
+}
+
+#str4 {
+    top: 75vh;
+    background-color: hsl(120, 98%, 40%);
+    animation-duration: 4000ms;
+}
+
+.circle {
+    background-color: hsl(313, 100%, 50%);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0vw;
+    height: 0vh;
+    animation: circleAnim 5000ms forwards;
+}
+
+.text-box {
+    width: 30%;
+    margin: 20% auto;
+    text-align: center;
+    animation: contentAnim 800ms 4000ms both;
+}
+
 @keyframes bodyColor {
     from {
         background-color: hsl(0, 0%, 100%);
     }
 
     to {
-        background-color: hsl(313, 100%, 69%);
+        background-color: hsl(313, 100%, 50%);
     }
-};
+}
 
-.strip {
-    height: 25vh;
+@keyframes moveToRight {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes moveToLeft {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+@keyframes circleAnim {
+    0% {
+        width: 1vw;
+        height: 1vh;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    100% {
+        width: max(200vw, 200vh);
+        height: max(200vw, 200vh);
+        opacity: 1;
+    }
+}
+
+@keyframes contentAnim {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
