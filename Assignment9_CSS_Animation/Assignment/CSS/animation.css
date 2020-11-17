@@ -1,4 +1,4 @@
-.starwars-box {
+.starwars-anim {
     height: 15vh;
     width: auto;
     position: absolute;
@@ -10,40 +10,59 @@
     padding: 20px 50px;
 }
 
-#imgSW1, #imgSW3 {
+#animSW1, #animSW3 {
     left: -100%;
     animation-name: moveToRight;
     animation-fill-mode: forwards;
 }
 
-#imgSW2, #imgSW4 {
+#animSW2, #animSW4 {
     right: -100%;
     animation-name: moveToLeft;
     animation-fill-mode: forwards;
 }
 
-#imgSW1 {
+#animSW1 {
     top: 10vh;
     animation-duration: 2000ms;
 }
 
-#imgSW2 {
+#animSW2 {
     top: 30vh;
     animation-duration: 2000ms;
     animation-delay: 800ms;
 }
 
-#imgSW3 {
+#animSW3 {
     top: 50vh;
     animation-duration: 2000ms;
     animation-delay: 1600ms;
 }
 
-#imgSW4 {
+#animSW4 {
     top: 65vh;
     animation-duration: 2000ms;
     animation-delay: 2400ms;
+}
 
+.central-anim {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0vw;
+    height: 0vh;
+    animation: circleAnim 5000ms 4500ms forwards;
+}
+
+@keyframes bodyColor {
+    from {
+        background-color: hsl(0, 0%, 37%);
+    }
+
+    to {
+        background-color: hsl(0, 0%, 9%);
+    }
 }
 
 @keyframes moveToRight {
@@ -66,17 +85,42 @@
     }
 }
 
-@media(min-width: 800px) {
-    #imgSW2 {
-        padding-right: 100px;
+
+@media(min-width: 650px) {
+    #animSW1 {
+        padding-left: 50px;
+    }
+    #animSW2 {
+        padding-right: 75px;
     }
     
-    #imgSW3 {
-        padding-left: 200px; 
+    #animSW3 {
+        padding-left: 100px; 
     }
     
-    #imgSW4 {
-        padding-right: 300px;
+    #animSW4 {
+        padding-right: 225px;
     }
-};
+}
+
+
+@media(min-width: 900px) {
+    @keyframes circleAnim {
+        0% {
+            width: 1vw;
+            height: 1vh;
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 0.6;
+        }
+    
+        100% {
+            width: max(40vw, 40vh);
+            height: max(40vw, 40vh);
+            opacity: 1;
+        }
+    }
+}
 

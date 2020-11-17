@@ -7,7 +7,9 @@ body {
     background-color: hsl(0, 0%, 23%);
     margin: 0px;
     overflow: hidden;
-    animation-duration: 5000ms;
+    animation-name: bodyColor;
+    animation-delay: 4500ms;
+    animation-duration: 6000ms;
     animation-fill-mode: forwards;
 }
 
