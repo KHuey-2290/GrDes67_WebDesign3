@@ -1,12 +1,13 @@
 .starwars-box {
-    height: 25vh;
+    height: 15vh;
     width: auto;
     position: absolute;
+    animation-timing-function: ease-in-out;
 }
 
 .sw-img {
     height: 100%;
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 #imgSW1, #imgSW3 {
@@ -22,25 +23,27 @@
 }
 
 #imgSW1 {
-    top: 95px;
-    animation-duration: 3000ms;
+    top: 10vh;
+    animation-duration: 2000ms;
 }
 
 #imgSW2 {
-    top: 25vh;
+    top: 30vh;
     animation-duration: 2000ms;
-    animation-delay: 1000ms;
+    animation-delay: 800ms;
 }
 
 #imgSW3 {
     top: 50vh;
-    animation-duration: 4000ms;
-    animation-timing-function: ease-in-out;
+    animation-duration: 2000ms;
+    animation-delay: 1600ms;
 }
 
 #imgSW4 {
-    top: 75vh;
-    animation-duration: 4000ms;
+    top: 65vh;
+    animation-duration: 2000ms;
+    animation-delay: 2400ms;
+
 }
 
 @keyframes moveToRight {
@@ -62,3 +65,18 @@
         right: 0;
     }
 }
+
+@media(min-width: 800px) {
+    #imgSW2 {
+        padding-right: 100px;
+    }
+    
+    #imgSW3 {
+        padding-left: 200px; 
+    }
+    
+    #imgSW4 {
+        padding-right: 300px;
+    }
+};
+
