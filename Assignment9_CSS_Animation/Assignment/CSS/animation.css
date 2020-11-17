@@ -1,0 +1,64 @@
+.starwars-box {
+    height: 25vh;
+    width: auto;
+    position: absolute;
+}
+
+.sw-img {
+    height: 100%;
+    padding: 50px;
+}
+
+#imgSW1, #imgSW3 {
+    left: -100%;
+    animation-name: moveToRight;
+    animation-fill-mode: forwards;
+}
+
+#imgSW2, #imgSW4 {
+    right: -100%;
+    animation-name: moveToLeft;
+    animation-fill-mode: forwards;
+}
+
+#imgSW1 {
+    top: 95px;
+    animation-duration: 3000ms;
+}
+
+#imgSW2 {
+    top: 25vh;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+}
+
+#imgSW3 {
+    top: 50vh;
+    animation-duration: 4000ms;
+    animation-timing-function: ease-in-out;
+}
+
+#imgSW4 {
+    top: 75vh;
+    animation-duration: 4000ms;
+}
+
+@keyframes moveToRight {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes moveToLeft {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0;
+    }
+}
