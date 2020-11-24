@@ -1,8 +1,12 @@
 body {
     margin: 0px;
+    background-image: linear-gradient(to left, rgb(204, 0, 255), rgb(0, 183, 255), rgb(204, 0, 255));
+    background-position: center;
 }
 
 canvas {
-    border: solid 1px black;
-    margin: 50px;
+    border: solid 5px rgb(11, 0, 73);
+    border-radius: 15px;
+    margin: 100px;
+    background-color: aliceblue;
 }

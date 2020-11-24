@@ -19,9 +19,10 @@ function draw () {
 
 function drawCircle() {
     context.beginPath();
-    context.strokeStyle = "black";
-    context.lineWidth = 2;
-    context.fillStyle = "teal";
+    context.boxSizing = "border-box";
+    context.strokeStyle = "navy";
+    context.lineWidth = 5;
+    context.fillStyle = "goldenrod";
     context.ellipse(cPosX, cPosY, cRad, cRad, 0, 0, 2*Math.PI);
     context.stroke();
     context.fill();
@@ -53,6 +54,6 @@ canvas.addEventListener("click", function(event){
     let distY = Math.abs(cPosY - mouseYp);
 
     if(distX < cRad && distY < cRad) {
-        console.log("FIRE!!!!!");
+        console.log("GOT EM!!!!!");
     }
 });
