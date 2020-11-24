@@ -5,7 +5,7 @@ let cPosX = canvas.width/2;
 let cPosY = canvas.height/2;
 let cVelX = 3.4;
 let cVelY = 4.2;
-let cRad = 60;
+let cRad = 50;
 
 function draw () {
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -45,8 +45,10 @@ draw();
 
 canvas.addEventListener("click", function(event){
     console.log(event);
+
     let mouseXp = event.pageX - event.target.offsetLeft;
     let mouseYp = event.pageY - event.target.offsetTop;
+
     console.log("Mouse X: " + mouseXp);
     console.log("Mouse Y: " + mouseYp);
 
@@ -55,5 +57,8 @@ canvas.addEventListener("click", function(event){
 
     if(distX < cRad && distY < cRad) {
         console.log("GOT EM!!!!!");
+        context.fillStyle = "pink";
+    } else {
+        console.log("MISSED!!");
     }
 });
