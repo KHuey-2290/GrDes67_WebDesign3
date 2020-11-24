@@ -57,8 +57,8 @@ canvas.addEventListener("click", function(event){
 
     if(distX < cRad && distY < cRad) {
         console.log("GOT EM!!!!!");
-        context.fillStyle = "pink";
-    } else {
-        console.log("MISSED!!");
+    } 
+    else {
+        console.log("MISSED!! Try again");
     }
 });
