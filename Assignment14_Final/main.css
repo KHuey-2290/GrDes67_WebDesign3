@@ -16,6 +16,10 @@ body {
     background-color: rgb(255, 236, 187);
 }
 
+main {
+    padding: 94px 0px 225px;
+}
+
 
 /* Responsive Smaller Phone Screens */
 
