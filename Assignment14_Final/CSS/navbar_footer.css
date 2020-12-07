@@ -1,0 +1,47 @@
+.nav-item a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav .navbar-brand img {
+    max-width: 70px;
+    padding: 10px 0px;
+}
+
+footer nav .nav .nav-item img {
+    max-height: 20px;
+}
+
+.navbar ul li {
+    padding-left: 20px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navbar, footer {
+    background-color: #091244;
+    width: 100%;
+}
+
+.nav-dropdown {
+    background-color: #091244;
+}
+
+
+/* Responsive Medium Tablet Screens */
+@media (min-width: 520px) {
+
+}
+
+
+/* Responsive Large Laptop Screens */
+@media (min-width: 768px) {
+
+}
+
+
+/* Respsonsive Larger Desktop Screens */
+@media (min-width: 960px) {
+
+}
