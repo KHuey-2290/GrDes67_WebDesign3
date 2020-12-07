@@ -1,0 +1,39 @@
+@import url("CSS/home.css");
+@import url("CSS/about.css");
+@import url("CSS/clothes.css");
+@import url("CSS/accessories.css");
+@import url("CSS/pillows.css");
+@import url("CSS/stuffedanimals.css");
+@import url("CSS/shop.css");
+@import url("CSS/learn.css");
+@import url("CSS/help.css");
+@import url("CSS/navbar.css");
+@import url("CSS/footer.css");
+@import url("CSS/color.css");
+@import url("CSS/typography.css");
+
+body {
+    margin: 0px;
+    background-color: rgb(255, 236, 187);
+}
+
+
+/* Responsive Smaller Phone Screens */
+
+
+/* Responsive Medium Tablet Screens */
+@media (min-width: 520px) {
+
+}
+
+
+/* Responsive Large Laptop Screens */
+@media (min-width: 768px) {
+
+}
+
+
+/* Respsonsive Larger Desktop Screens */
+@media (min-width: 960px) {
+
+}
