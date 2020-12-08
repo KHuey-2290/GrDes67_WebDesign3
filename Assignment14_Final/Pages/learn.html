@@ -109,6 +109,56 @@
         </div>
     </footer>
 
+    <!-- Modal Begins Here -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title col" id="ModalLabel">Subscribe to our newsletter!</h2>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p class="col">Signup for our monthly newsletter to get the latest news, updates and amazing offers delivered directly to your inbox.</p>
+
+                    <form>
+                        <div class="form-group col">
+                            <label for="inputFullName">Full Name</label>
+                            <input type="text" class="form-control" id="inputFullName" placeholder="Jane Smith">
+                        </div>
+
+                        <div class="form-group col">
+                            <label for="inputEmail">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="janesmith123@email.com">
+                        </div>
+
+                        <div class="col">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+                                <label class="custom-control-label" for="customSwitch1">Yes, I would like monthly newsletters.</label>
+                            </div>
+                            
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                <label class="custom-control-label" for="customSwitch2">No, I do not want monthly newsletters.</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="modal-footer col">
+                    <button type="button" class="btn btn-secondary text-dark" data-dismiss="modal">Not Now</button>
+
+                    <button type="button" class="btn btn-subscribe text-light" id="btnSub" data-dismiss="modal">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>\
