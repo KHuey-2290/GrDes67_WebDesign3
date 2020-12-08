@@ -1,0 +1,20 @@
+/* Jumbotron */
+.jumbotron {
+    height: 400px;
+}
+
+section.jumbotron-fluid {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-transparent {
+    color: rgb(4, 133, 255);
+    text-shadow: 5px 5px 8px hsl(232, 100%, 90%);
+}
+
+/* Modal */
+.btn-subscribe {
+    background-color: brown;
+}

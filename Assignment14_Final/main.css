@@ -10,6 +10,8 @@
 @import url("CSS/navbar_footer.css");
 @import url("CSS/color.css");
 @import url("CSS/typography.css");
+@import url("CSS/jumbotron_modal.css");
+
 
 body {
     margin: 0px;
@@ -17,7 +19,7 @@ body {
 }
 
 main {
-    padding: 94px 0px 225px;
+    padding-top: 94px;
 }
 
 
