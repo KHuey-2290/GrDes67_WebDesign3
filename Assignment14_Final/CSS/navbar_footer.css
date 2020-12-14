@@ -1,5 +1,14 @@
-.nav-item a {
+.nav-link {
     font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+.dropdown-item {
+    font-size: 20px;
+}
+
+.nav-dropdown {
+    margin-left: 15px;
 }
 
 nav .navbar-brand img {
@@ -12,7 +21,7 @@ footer nav .nav .nav-item img {
 }
 
 .navbar ul li {
-    padding-left: 20px;
+    padding-left: 30px;
 }
 
 .active {
