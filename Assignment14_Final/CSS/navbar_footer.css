@@ -16,7 +16,7 @@ nav .navbar-brand img {
     padding: 10px 0px;
 }
 
-footer nav .nav .nav-item img {
+footer .text-columns ul .nav-item img {
     max-height: 20px;
 }
 
@@ -28,13 +28,21 @@ footer nav .nav .nav-item img {
     font-weight: bold;
 }
 
+.nav-dropdown {
+    background-color: #091244;
+}
+
 .navbar, footer {
     background-color: #091244;
     width: 100%;
 }
 
-.nav-dropdown {
-    background-color: #091244;
+footer .text-columns {
+    justify-content: space-between;
+}
+
+.footer-btn-subscribe {
+    background-color: brown;
 }
 
 
