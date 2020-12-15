@@ -30,11 +30,11 @@
 } 
 
 /* Masonry Card Grid */
-.card {
+.card-pop {
     transition: all .2s ease-in-out;
 }
 
-.card:hover {
+.card-pop:hover {
     transform: scale(1.05);
 }
 

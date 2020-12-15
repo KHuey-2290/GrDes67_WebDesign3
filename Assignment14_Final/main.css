@@ -1,5 +1,4 @@
 @import url("CSS/home.css");
-@import url("CSS/about.css");
 @import url("CSS/clothes.css");
 @import url("CSS/accessories.css");
 @import url("CSS/pillows.css");
@@ -15,7 +14,7 @@
 
 body {
     margin: 0px;
-    background-color: rgb(255, 236, 187);
+    background-color:rgb(255, 236, 187);
 }
 
 main {

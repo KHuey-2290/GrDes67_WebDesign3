@@ -1,0 +1,13 @@
+.products-title {
+    font-size: 50px;
+    color: rgb(9, 18, 68);
+}
+
+.products-subheader {
+    font-size: 25px;
+}
+
+.btn-cart {
+    background-color: rgb(201, 64, 64);
+    color: rgb(255, 236, 187);
+}
