@@ -11,3 +11,20 @@
     background-color: rgb(201, 64, 64);
     color: rgb(255, 236, 187);
 }
+
+.btn-checkout {
+    background-color: rgb(4, 133, 255);
+    width: 250px;
+    height: 75px;
+    font-size: 30px;
+}
+
+.btn-checkout-pay {
+    padding: 10px 10px;
+    font-size: 22px;
+}
+
+#btnCheckPay {
+    background-color: rgb(4, 133, 255);
+    color: rgb(255, 207, 77);
+}

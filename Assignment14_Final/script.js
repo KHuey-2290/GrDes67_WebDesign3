@@ -1,5 +1,4 @@
 
-
 $(document).ready(function() {
 
   //Modal  
@@ -7,15 +6,12 @@ $(document).ready(function() {
 
   $(".yes-btn").click(function(){
       $("input:text").attr("disabled",!this.checked);
+      $("input:submit").attr("disabled",!this.clicked);
   });
 
-  $("form.needs-validation").submit(function(event){
-      event.preventDefault();
-
-      if($("input:text").val() === "" ){
-        $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
-      }
-    })
+  $(".same-btn").click(function(){
+    $("input:text").attr("disabled",this.checked);
+  });
 
   // Carousel
   $(".carousel").carousel({

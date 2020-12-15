@@ -75,7 +75,7 @@
     </header>
 
     <main>
-        <div class="container">
+        <div class="container mb-5 shopping-items-box">
             <div class="row mt-5">
                 <div class="col">
                     <h1 class="products-title text-center pb-3">All Products</h2>
@@ -484,6 +484,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Button Triggers Checkout Modal -->
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <button type="button" class="my-5 btn btn-checkout text-warning" id="btnCheckOut" data-toggle="modal" data-target="#staticBackdrop">Checkout!</button>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -542,57 +549,269 @@
         </div>
     </footer>
 
-    <!-- Modal Begins Here -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
+    <!-- Checkout Modal Begins Here -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content py-3">
                 <div class="modal-header">
-                    <h2 class="modal-title col" id="ModalLabel">Subscribe to our newsletter!</h2>
+                    <h2 class="modal-title px-2" id="staticBackdropLabel">Let's Check You Out!</h2>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span class="px-3" aria-hidden="true">&times;</span>
                     </button>
                 </div>
 
-                <div class="modal-body">
-                    <p class="col">Signup for our monthly newsletter to get the latest news, updates and amazing offers delivered directly to your inbox.</p>
-
+                <div class="modal-body px-4">
                     <form class="needs-validation" novalidate>
-                        <div class="form-group col">
-                            <label for="inputFullNameValid" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="inputFullNameValid" placeholder="Jane Smith">
+                        <h4>Shippimg Information</h4>
 
-                            <div class="invalid-feedback">
-                                Please provide full name.
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="valShipFN01">First name</label>
+                                <input type="number" class="form-control" id="valShipFN01" placeholder="Mark" required>
+    
+                                <div class="invalid-feedback">
+                                    Missing first name!
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 mb-3">
+                                <label for="valShipLN02">Last name</label>
+                                <input type="number" class="form-control" id="valShipLN02" placeholder="Otto" required>
+    
+                                <div class="invalid-feedback">
+                                    Missing last name!
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="valShipCity03">City</label>
+                                <input type="number" class="form-control" id="valShipCity03" required>
+    
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 mb-3">
+                                <label for="valShipState04">State</label>
+
+                                <select class="custom-select" id="valShipState04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>My State</option>
+                                    <option>Another State</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 mb-3">
+                                <label for="valShipZip05">Zip</label>
+                                <input type="number" class="form-control" id="valShipZip05" required>
+    
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
                             </div>
                         </div>
 
-                        <div class="form-group col">
-                            <label for="inputEmaiValid" class="form-label">Email Address</label>
-                            <input type="text" class="form-control" id="inputEmailValid" placeholder="janesmith123@email.com">
-
-                            <div class="invalid-feedback">
-                                Please provide email.
+                        <div class="row">
+                            <div class="col">
+                                <div class="custom-control custom-switch pt-4 pb-5">
+                                    <input type="checkbox" class="custom-control-input same-btn" id="customSwitch2" !checked>
+                                    <label class="custom-control-label" for="customSwitch2">Billing Information is the same is Shipping Information.</label>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input yes-btn" id="customSwitch1" checked>
-                                <label class="custom-control-label" for="customSwitch1">Yes, I would like monthly newsletters.</label>
+                        <h4>Billing Information</h4>
+
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="valBillFN01">First name</label>
+                                <input type="text" class="form-control" id="valBillFN01" value="Mark" required>
+    
+                                <div class="invalid-feedback">
+                                    Missing first name!
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 mb-3">
+                                <label for="valBillLNm02">Last name</label>
+                                <input type="text" class="form-control" id="valBillLNm02" value="Otto" required>
+    
+                                <div class="invalid-feedback">
+                                    Missing last name!
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="col-md-6 mb-3">
+                                <label for="valBillCity03">City</label>
+                                <input type="text" class="form-control" id="valBillCity03" required>
+    
+                                <div class="invalid-feedback">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 mb-3">
+                                <label for="valBillState04">State</label>
+
+                                <select class="custom-select" id="valBillState04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>...</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+    
+                            <div class="col-md-3 mb-3">
+                                <label for="valBillZip05">Zip</label>
+                                <input type="text" class="form-control" id="valBillZip05" required>
+    
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <h4 class="pt-3">Payment Information</h4>
+
+                        <div class="row py-3">
+                            <div class="col">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+
+                                    <label class="form-check-label" for="exampleRadios1">
+                                        Debit Card
+                                    </label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+
+                                    <label class="form-check-label" for="exampleRadios2">
+                                        Credit Card
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col mb-3">
+                                <label for="valPayName01">Name on Card</label>
+                                <input type="number" class="form-control" id="valPayName01" placeholder="Mark Z. Otto" required>
+    
+                                <div class="invalid-feedback">
+                                    Please provide the name on card!
+                                </div>
+                            </div>
+    
+                            <div class="col mb-3">
+                                <label for="valPayNumb02">Card Number</label>
+                                <input type="number" class="form-control" id="valPayNumb02" placeholder="Otto" required>
+    
+                                <div class="invalid-feedback">
+                                    Missing last name!
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="valPayMonth04">Exp. Month</label>
+
+                                <select class="custom-select" id="valPayMonth04" required>
+                                    <option selected disabled value="">...</option>
+                                    <option>Good Month</option>
+                                    <option>Bad Month</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4 mb-3">
+                                <label for="valPayYear04">Exp. Year</label>
+
+                                <select class="custom-select" id="valPayYear04" required>
+                                    <option selected disabled value="">...</option>
+                                    <option>Good Year</option>
+                                    <option>Bad Year</option>
+                                </select>
+
+                                <div class="invalid-feedback">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+    
+                            <div class="col-md-4 mb-3">
+                                <label for="valPayCode05">Security Code</label>
+                                <input type="number" class="form-control" id="valPayCode05" placeholder="CVV" required>
+    
+                                <div class="invalid-feedback">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-group py-4">
+                            <div class="form-check d-flex justify-content-end">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label pr-4" for="invalidCheck">
+                                    Agree to terms and conditions
+                                </label>
+    
+                                <div class="invalid-feedback">
+                                    You must agree before submitting.
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col inline d-flex justify-content-end">
+                                <button class="btn btn-secondary btn-checkout-pay" id="btnCheckCancel" type="submit" data-dismiss="modal">Cancel</button>
+
+                                <button class="btn btn-checkout-pay ml-3" id="btnCheckPay" type="submit">Pay now</button>
                             </div>
                         </div>
                     </form>
                 </div>
-
-                <div class="modal-footer col">
-                    <button type="button" class="btn btn-secondary text-dark" data-dismiss="modal">Not Now</button>
-
-                    <button type="submit" class="btn btn-subscribe text-light" id="btnSub" data-dismiss="modal">Subscribe</button>
-                </div>
             </div>
         </div>
     </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
