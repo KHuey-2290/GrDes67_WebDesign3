@@ -74,7 +74,85 @@
         </div>
     </header>
 
-    <main></main>
+    <main class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="help-title text-center my-0 pt-5 pb-4">Contact Us</h1>
+
+                <hr>
+
+                <p class="text-center"><b>Store Hours:</b> SMon- Fri: 10:30am - 7pm | Sat - Sun: 11:30am - 4pm<br>Email us at <a href="#">khcraftsdesigns@gmail.com</a></p>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 mb-5">
+            <div class="col mb-4 pt-5">
+                <form class="needs-validation pb-4" novalidate>
+                    <div class="form-contact">
+                        <div class="mb-3">
+                            <label for="valFN01">First name</label>
+                            <input type="text" class="form-control" id="valFN01" placeholder="Janice" required>
+
+                            <div class="invalid-feedback">
+                                Please provide a first name.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="valLN02">Last name</label>
+                            <input type="text" class="form-control" id="valLN02" placeholder="Smith" required>
+                            
+                            <div class="invalid-feedback">
+                                Please provide a first name.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-contact">
+                        <div class="mb-3">
+                            <label for="valEmail03">Email</label>
+                            <input type="text" class="form-control" id="valEmail03" placeholder="janice.smith@example.com" required>
+
+                            <div class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="valPhone03">Email</label>
+                            <input type="text" class="form-control" id="valPhone03" placeholder="1(###)###-####" required>
+
+                            <div class="invalid-feedback">
+                                Please select a valid phone number.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="valMessage05">Message</label>
+                            <textarea rows="15" cols="90" class="form-control" id="valMessage05" name="contact[body]" placeholder="Message" required></textarea>
+
+                            <div class="invalid-feedback">
+                                You forgot to write something.
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-contact text-warning justify-content-end" type="submit">Submit form</button>
+                </form>
+            </div>
+            
+            <div class="col mb-4 pt-5">
+                <h3>Location</h3>
+                <p>1250 S La Cienega Blvd<br>Los Angeles, CA 90035</p>
+
+                <div class="embed-responsive embed-responsive-4by3">
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.590205475315!2d-118.37810398478489!3d34.05438158060528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b969f1ff7791%3A0x99e40339c27cacd9!2sJOANN%20Fabrics%20and%20Crafts!5e0!3m2!1sen!2sus!4v1608027165282!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class=" footer">
         <div class="container text-columns py-4">
@@ -130,7 +208,27 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+                });
+            }, false);
+        })();
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
