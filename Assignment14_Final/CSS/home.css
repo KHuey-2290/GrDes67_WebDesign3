@@ -1,14 +1,14 @@
 /* 3-Column Section */
 .text-column-img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: auto;
     margin-bottom: 25px;
 }
 
 .text-column-img img {
     width: 100%;
-    border-radius: 100px;
+    border-radius: 150px;
 }
 
 .text-column-3 h4 {
@@ -23,6 +23,12 @@
     color: cornsilk;
 }
 
+.text-columns h1, .masonry-title {
+    color: #091244;
+    text-align: center;
+    font-size: 45px;
+} 
+
 /* Masonry Card Grid */
 .card {
     transition: all .2s ease-in-out;
@@ -35,6 +41,34 @@
 .masonry-title {
     color: rgb(9, 18, 68);
 }
+
+#masonryImg1 img, #masonryImg3 img, #masonryImg5 img, #masonryImg9 img {
+    width: 100%;
+    height: auto;
+}
+
+#masonryImg2, #masonryImg4, #masonryImg6 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+#masonryImg2 figure, #masonryImg6 figure {
+    background-color: rgba(240, 248, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#masonryImg4 figure {
+    background-color: rgba(64, 64, 65, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#masonryImg4 p, #masonryImg4 cite {
+    color: aliceblue;
+}
+
 
 /* Responsive Medium Tablet Screens */
 @media (min-width: 520px) {
