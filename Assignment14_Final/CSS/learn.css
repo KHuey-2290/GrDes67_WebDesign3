@@ -12,3 +12,7 @@
 .learn-page h2 {
     color:  #d44b4b;
 }
+
+.learn-page h5, h4 {
+    text-decoration: underline;
+}
