@@ -1,6 +1,14 @@
 .products-title {
     font-size: 50px;
-    color: rgb(9, 18, 68);
+    color: #08176d;
+}
+
+.shopping-items-box h1, h4, p {
+    color: #08176d;
+}
+
+.shopping-items-box h5 {
+    color: #0485ff;
 }
 
 .products-subheader {
@@ -8,12 +16,12 @@
 }
 
 .btn-cart {
-    background-color: rgb(201, 64, 64);
-    color: rgb(255, 236, 187);
+    background-color: #d44b4b;
+    color: #ffecbb;
 }
 
 .btn-checkout {
-    background-color: rgb(4, 133, 255);
+    background-color: #0485ff;
     width: 250px;
     height: 75px;
     font-size: 30px;
@@ -25,6 +33,6 @@
 }
 
 #btnCheckPay {
-    background-color: rgb(4, 133, 255);
+    background-color: #0485ff;
     color: rgb(255, 207, 77);
 }

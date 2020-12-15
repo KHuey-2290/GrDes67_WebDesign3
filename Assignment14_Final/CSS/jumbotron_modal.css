@@ -11,10 +11,14 @@ section.jumbotron-fluid {
 
 .bg-transparent {
     color: rgb(4, 133, 255);
-    text-shadow: 5px 5px 8px hsl(232, 100%, 90%);
+    text-shadow: 5px 5px 8px #ccd3ff;
 }
 
 /* Modal */
 .btn-subscribe {
-    background-color: brown;
+    background-color: #d44b4b;
+}
+
+.modal h2 {
+    color: #d44b4b;
 }

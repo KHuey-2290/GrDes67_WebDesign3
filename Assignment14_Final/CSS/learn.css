@@ -5,3 +5,10 @@
 .learn-featurette h1 {
     font-size: 50px;
 }
+.learn-page h1, h4, p {
+    color: #08176d;
+}
+
+.learn-page h2 {
+    color:  #d44b4b;
+}
